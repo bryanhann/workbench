@@ -1,0 +1,10 @@
+mkdir -p ${WORKBENCH}/.build/vendor
+pushd ${WORKBENCH}/.build/vendor
+git clone https://github.com/ssledz/bash-fun 
+git clone https://github.com/spencertipping/bash-lambda 
+git clone https://github.com/sstephenson/bats 
+git clone https://github.com/bats-core/bats-core 
+git clone https://github.com/binaryphile/dot_vim 
+git clone https://github.com/coryb/osht 
+git clone git://github.com/rylnd/shpec 
+git clone https://github.com/binaryphile/source-as-module 
