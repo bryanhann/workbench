@@ -1,0 +1,2 @@
+aa=$(bch.upfind pyproject.toml)
+[ ! -x $aa ] && pytest $aa/.. $*

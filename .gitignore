@@ -1,3 +1,4 @@
 poetry.bch_*
 .build
 .hide
+prj

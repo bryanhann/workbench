@@ -12,7 +12,7 @@ echo }} rm -rf ./dist
         rm -rf ./dist
 echo }} poetry version patch
         poetry version patch
-        VERSION=v$(poetry version -s)
+        VERSION=$(poetry version -s)
 echo }} poetry build
         poetry build
 echo }} git status

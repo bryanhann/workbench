@@ -1,0 +1,10 @@
+#!
+export_ () { export $1=$2; }
+cd ..
+[ "${WORKBENCH_ACTIVE}" = "1" ] || {
+    echo ACTIVATING WORKBENCH
+    export_  WORKBENCH_ACTIVE   1
+    export_  WORKBENCH          ${PWD}
+    export_  PATH               ${WORKBENCH}/bin:${PWD}
+}
+
