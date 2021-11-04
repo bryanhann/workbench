@@ -1,0 +1,15 @@
+#!
+export_ () { export $1=$2; }
+
+export_  WB_LIB      ${WB}/lib
+export_  WB_BIN      ${WB}/bin
+export_  WB_POET     ${WB}/poet
+export_  WB_BUILD    ${WB}/.build
+export_  WB_VENDOR   ${WB_BUILD}/.vendor
+export_  WB_PRJ      ${WB_BUILD}/.prj
+
+[ "${WB_ACTIVE}" = "1" ] || {
+    export_  WB_ACTIVE   1
+    . ${WB_BIN}/.wb.path.append ${WB_BIN}
+}
+

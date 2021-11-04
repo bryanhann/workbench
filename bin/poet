@@ -1,4 +1,4 @@
 #!/bin/sh
 export PYTHONPATH=$PYTHONPATH:${WB_POET}
 export PATH=${PATH}:${WB_POET}/.venv/bin
-$0.d/$*
+$0.$*

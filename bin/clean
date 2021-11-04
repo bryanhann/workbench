@@ -1,0 +1,3 @@
+for path in $(find ${WB_BIN}) | ; do
+    [ -f $path ] && echo $path
+done

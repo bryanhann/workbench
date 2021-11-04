@@ -1,16 +1,5 @@
 #!
-export_ () { export $1=$2; }
 cd ..
-[ "${WB_ACTIVE}" = "1" ] || {
-    export_  WB          ${PWD}
-    export_  WB_LIB      ${PWD}/lib
-    export_  WB_BIN      ${PWD}/bin
-    export_  WB_POET     ${PWD}/poet
-    export_  WB_BUILD    ${PWD}/.build
-    export_  WB_VENDOR   ${WB_BUILD}/.vendor
-    export_  WB_PRJ      ${WB_BUILD}/.prj
-    export_  WB_ACTIVE   1
-    export_  PATH        ${PATH}:${WB_BIN}
-    echo ACTIVATING WORKBENCH
-}
-
+echo [$PWD]: activating self
+export WB=${PWD}
+. ${WB}/bin/.wb.activate
