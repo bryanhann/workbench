@@ -1,0 +1,7 @@
+#!/bin/bash
+aa=$(bch.upfind pyproject.toml)
+[ "$aa" = "" ] && {
+    echo not in a project > /dev/stderr
+    exit 1
+}
+echo $(dirname $aa)

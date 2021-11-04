@@ -1,0 +1,13 @@
+cloneto () { [ -d $1 ]||{ D=$1;shift;mkdir -p $(dirname $D);git clone $* ${D}; echo; }; }
+
+v () { cloneto ${WB_VENDOR}/$* ; }
+
+v bats/bats-core    https://github.com/bats-core/bats-core.git
+v bats/bats-support https://github.com/bats-core/bats-support.git
+v bats/bats-assert  https://github.com/bats-core/bats-assert.git
+v bash-fun          https://github.com/ssledz/bash-fun
+v bash-lambda       https://github.com/spencertipping/bash-lambda
+v dot_vim           https://github.com/binaryphile/dot_vim
+v osht              https://github.com/coryb/osht
+v shpec             git://github.com/rylnd/shpec
+v source-as-module  https://github.com/binaryphile/source-as-module

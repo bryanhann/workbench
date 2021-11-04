@@ -1,2 +1,0 @@
-#!/bin/bash
-git clone git@github.com:bryanhann/poetry.bch_$1 $WORKBENCH/prj/$1

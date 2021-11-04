@@ -1,4 +1,6 @@
-poetry.bch_*
 .build
 .hide
-prj
+.bin
+hack
+*.pyc
+__pycache__

@@ -1,0 +1,8 @@
+#!/bin/bash
+. src.hack
+prj=$HACK/$1
+[ -f ${prj}/pyproject.toml ] || {
+    echo "[$(basename $0)]: bad project name: [$1]" > /dev/stderr
+    exit 1
+}
+echo ${prj}

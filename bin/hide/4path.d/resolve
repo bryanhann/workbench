@@ -1,0 +1,9 @@
+#!/usr/bin/env python3
+from pathlib import Path
+import sys
+
+def main(path):
+    print( Path(path).resolve())
+if __name__ == '__main__':
+    main(*sys.argv[1:])
+

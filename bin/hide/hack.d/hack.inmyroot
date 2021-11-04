@@ -1,0 +1,5 @@
+#!/bin/bash
+aa=$(hack.myroot) || exit
+pushd ${aa} > /dev/null
+$*
+popd > /dev/null

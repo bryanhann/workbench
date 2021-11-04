@@ -1,0 +1,4 @@
+#!/bin/bash
+prefix=git@github.com:bryanhann/poetry.bch_
+git clone ${prefix}${1} ${WB_PRJ}/${1}
+#git clone git@github.com:bryanhann/poetry.bch_$1 $WB_PRJ/$1

@@ -1,0 +1,5 @@
+#!/bin/bash
+[ -x $0.$1 ] && {
+    $0.$*
+}
+echo help for $0

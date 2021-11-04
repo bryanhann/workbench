@@ -1,0 +1,4 @@
+. src.hack
+root=${HACK}/$1
+[ -f $root/pyproject.toml ] && echo ${root}
+[ -f $root/pyproject.toml ] || exit 1

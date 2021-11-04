@@ -1,0 +1,4 @@
+[ -d $WB_POET/.venv ] && exit
+pushd $WB_POET
+poetry install
+popd

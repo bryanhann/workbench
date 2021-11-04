@@ -1,0 +1,11 @@
+#!/bin/bash
+. src.wb
+
+[ "$1" = "" ] && wb_die -c $0 arg required
+[ -d "$1"   ] || wb_die -c $0 "not a directory: [$1]"
+
+pushd $1 > /dev/null
+shift
+$*
+popd > /dev/null
+

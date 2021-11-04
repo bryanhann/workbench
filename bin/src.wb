@@ -1,0 +1,10 @@
+#!
+wb_die () {
+    name=anon
+    [ "$1" = "-c" ] && [ ! "$2" == "" ] && { name=$(basename $2); shift 2; }
+    #name=$(basename $1)
+    echo "[$name] error: $*"
+    exit 1
+}
+
+alias gobin="pushd ${WB_BIN}"

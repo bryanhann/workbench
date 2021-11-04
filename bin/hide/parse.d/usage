@@ -1,0 +1,12 @@
+#!/bin/bash
+usage () {
+    echo USAGE: 
+    echo "    wb $(basename $0) SUBCOMMAND"
+    echo "SUBCOMMANDS:"
+    for path in $(/bin/ls $0.d); do
+        echo "    $path"
+    done
+} 
+
+usage $1
+
